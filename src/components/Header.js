@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 // import PropTypes from 'prop-types';
 
+var isLoggedIn = false;
 function Header(props) {
     return (
         <header>
@@ -14,6 +15,12 @@ function Header(props) {
               <Link className="me-3 py-2 text-dark text-decoration-none" to="/">Home</Link>
               <Link className="me-3 py-2 text-dark text-decoration-none" to="/about">About</Link>
               <Link className="me-3 py-2 text-dark text-decoration-none" to="/contact">Contact</Link>
+
+              {!isLoggedIn &&
+                <a href="/login" className="btn btn-primary">Login</a>}
+
+              {isLoggedIn &&
+                <a href="/logout" className="btn btn-primary">Logout</a>}
             </nav>
           </div>
         </header>
