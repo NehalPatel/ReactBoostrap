@@ -16,7 +16,7 @@ function App() {
     <div>
       <div className="container py-3">
         <BrowserRouter>
-          <Header />
+          <Header name="SDJIC" />
           <main>
 
             <Routes>

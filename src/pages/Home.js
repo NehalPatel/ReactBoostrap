@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Home(params){
+function Home(props){
     return (
         <>
         <div className="pricing-header p-3 pb-md-4 mx-auto text-center">

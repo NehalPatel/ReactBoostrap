@@ -1,4 +1,4 @@
-function Footer(params) {
+export default function Footer(params) {
     return (
         <footer className="pt-4 my-md-5 pt-md-5 border-top">
           <div className="row">
@@ -39,5 +39,3 @@ function Footer(params) {
         </footer>
     )
 }
-
-export default Footer;
