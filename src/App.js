@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from "./pages/Contact";
+import Demo from "./pages/Demo";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About name="SDJIC" />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="demo" element={<Demo />} />
             </Routes>
 
           </main>
